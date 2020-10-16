@@ -1,5 +1,5 @@
 function palindrome() {
-  str1 = document.getElementById("userNum6").value;
+  str = document.getElementById("userNum6").value;
   let spanE = document.getElementById("palinAnswer");
 
   if (myTrim(str) == "") {
