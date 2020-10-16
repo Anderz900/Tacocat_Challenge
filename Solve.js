@@ -101,7 +101,7 @@ function ticked() {
   updateNodes();
 }
 
-document.getElementById("palinBtn").addEventListener("click", palindrome());
+document.getElementById("palinBtn").addEventListener("click", palindrome);
 
 document.getElementById("expand").addEventListener("click", function() {
   const element = document.getElementById("expand1");
