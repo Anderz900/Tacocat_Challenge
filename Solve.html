@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>ARM - TACOCAT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/Content/Solve.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="/Index.html">Tacocat Challenge</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/Index.html">
+                Home
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/Solve.html">Solve</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Code.html">Code</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/Anderz900">Github</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://andres-devfolio.netlify.app/"
+                >Portfolio</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container-fluid">
+      <div class="row mb-5">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Palindrome Checker</h1>
+          <p class="lead fs-12">
+            Put any word in the white-space below, then click on the palindrome
+            button to show whether it's a palindrome or not.
+          </p>
+        </div>
+      </div>
+      <div class="row minh-50"></div>
+      <div class="row text-center mb-5">
+        <div class="col-3"></div>
+        <div class="col-3">
+          <input type="text" id="userNum6" />
+        </div>
+        <div class="col-3">
+          <button class="btn btn-primary" id="palinBtn">
+            Palindrome?
+          </button>
+        </div>
+        <div class="col-3">
+          <span id="palinAnswer"></span>
+        </div>
+      </div>
+    </div>
+    <table width="100%">
+      <tr>
+        <td><hr /></td>
+        <td style="width:1px; padding: 0 10px; white-space: nowrap;">
+          <button class="btn btn-warning" id="expand">WHY?</button>
+        </td>
+        <td><hr /></td>
+      </tr>
+    </table>
+
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="col-6 text-center" id="content">
+          <svg width="400" height="200">
+            <g class="links"></g>
+            <g class="nodes"></g>
+          </svg>
+        </div>
+        <!-- maybee add another d3 code for palindrome by phrases. -->
+        <div class="col-6 invisible text-justify">
+          <p id="expand1">
+            Here, racecar can be read the same way if one were to read it from
+            left to right or from right to left. <br />
+            <br />
+
+            Alternatively, one can use the mirror-like aspect of palindromes by
+            comparing the first letter from the first half with the first letter
+            from the second half (starting from the end of the word). If the
+            letters match then continue onwards until all letters in both halves
+            match with their mirror-image element. If it doesn't match, it's not
+            a palindrome.
+          </p>
+        </div>
+      </div>
+      <!-- <div id="content">
+        <svg width="400" height="300">
+          <g class="links"></g>
+          <g class="nodes2"></g>
+        </svg> animate__animated-->
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script
+      src="//code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+    <script src="Solve.js"></script>
+  </body>
+</html>

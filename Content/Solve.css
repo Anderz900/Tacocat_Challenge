@@ -1,0 +1,58 @@
+circle {
+  fill: cadetblue;
+}
+line {
+  stroke: #ccc;
+}
+text {
+  text-anchor: middle;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  fill: #666;
+  font-size: 16px;
+}
+
+.divider {
+  width: 500px;
+  text-align: center;
+}
+
+.divider hr {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.col-3.text0 {
+  display: hidden;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.minh-50 {
+  min-height: 50px;
+}
+
+body {
+  background-image: linear-gradient(
+    180deg,
+    #439093,
+    #e9dd8a,
+    #f9ebd9,
+    #e9dd8a,
+    #439093
+  );
+}

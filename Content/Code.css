@@ -1,0 +1,49 @@
+.minh-100 {
+  min-height: 100px;
+}
+
+.maxw-700 {
+  max-width: 700px;
+}
+
+.maxw-100 {
+  max-width: 100px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fy {
+  color: yellow;
+}
+
+.fly {
+  color: lightyellow;
+}
+
+body {
+  background-image: url("../Images/codingbg.png");
+  background-size: cover;
+  height: 100%;
+}
+
+.bg-ly {
+  background-color: lightyellow;
+}
+
+.bg-lg {
+  background-color: #e8e8e8;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-special {
+  background-color: rgb(36, 44, 36);
+}

@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>ARM - TACOCAT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Content/prism.css" />
+    <link rel="stylesheet" href="Content/Code.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="/Index.html">Tacocat Challenge</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/Index.html">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Solve.html">Solve</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/Code.html">Code</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/Anderz900">Github</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://andres-devfolio.netlify.app/"
+                >Portfolio</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="fy">Review of the Code</h1>
+          <p class="lead fs-12 fly">
+            This page shows the strategy behind the code, as well as the analyis
+            of space and time efficiency.
+          </p>
+        </div>
+      </div>
+
+      <div class="row minh-100"></div>
+      <div class="row">
+        <div class="col-3 text-center fy">Explanation:</div>
+        <div class="col-9 text-center fy">Code:</div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-3 bg-special rounded ml-3 mb-3">
+          <p class="fs-12 text-justify fly mt-3">
+            The function palindrome accepts a string from the user and returns
+            true if it is a palindrome or false if it is not. The user input is
+            the value of the string and the spanE element targets the html
+            element in charge of conveying the result to the user.
+            <br />
+            <br />
+            Before the loop, the j variable points to the last index of the
+            string. In the for loop, we compare values of the first half of the
+            string with values in the second half, which is the purpose of
+            decrementing the j variable after every iteration. If at any time
+            the i and j pairs do not match, then clearly the word does not
+            respect the mirror-like quality of a palindrome. If there is no
+            mismatch, then the word is a palindrome.
+            <br />
+            <br />
+            In terms of space, there is no extra data structure being used
+            except the j variable which is simply O(1) space. With regards to
+            time-complexity, a single loop is done across the string, which is
+            just O(n) time. This algorithm is therefore efficient.
+          </p>
+        </div>
+        <div class="col-9 maxw-700 ml-5">
+          <pre
+            class="language-js"
+          ><code class="language-js">function palindrome(str) {
+                let spanE = document.getElementById("palinAnswer");
+
+                if (myTrim(str) == "") {
+                  spanE.innerHTML = "Please put in letters!";
+                  return false;
+                }
+          
+                j = str.length - 1;
+          
+                for (let i = 0; i < str.length; i++) {
+                  if (str.charAt(i).toLowerCase() != str.charAt(j).toLowerCase()) {
+                    spanE.innerHTML = "It's not a palindrome.";
+                    return false;
+                  }
+                  j--;
+                }
+                spanE.innerHTML = "It's a palindrome!";
+                return true;
+              }</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script
+      src="//code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="prism.js"></script>
+  </body>
+</html>
